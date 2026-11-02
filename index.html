@@ -282,6 +282,7 @@
         <ul>
           <li>Se l'utente concede il permesso di sistema "Accesso ai dati di utilizzo" (<code>PACKAGE_USAGE_STATS</code>), Tratto calcola localmente il tempo di utilizzo recente e le app usate più spesso per mostrare una dock predittiva intelligente e indicatori sul benessere digitale.</li>
           <li>Se il permesso non viene concesso, Tratto funziona regolarmente contando solo le aperture effettuate all'interno del launcher stesso.</li>
+          <li>Se l'utente concede l'"Accesso alle notifiche" (facoltativo, disattivato di serie), Tratto conta in locale quante notifiche ha ogni app per mostrarne il numero sull'icona. Legge solo da quale app arriva una notifica e quante sono: i testi non vengono salvati, mostrati o inviati, e il conteggio sparisce con la notifica. L'accesso si revoca in qualsiasi momento dalle impostazioni di Android.</li>
           <li>Tutti i conteggi, le associazioni di orario, le preferenze di ordinamento, le app nascoste e gli alias personalizzati risiedono esclusivamente nei file <code>SharedPreferences</code> protetti nella sandbox locale dell'applicazione.</li>
         </ul>
 
@@ -382,6 +383,7 @@
         <ul>
           <li>If the user grants the optional "Usage Access" system permission (<code>PACKAGE_USAGE_STATS</code>), Tratto analyzes app usage locally to generate predictive launch dock shortcuts and mindful digital wellbeing cues.</li>
           <li>If the permission is not granted, Tratto operates normally by counting launches performed directly inside the launcher.</li>
+          <li>If the user grants the optional "Notification access" (off by default), Tratto counts on the device how many notifications each app has, to show that number on its icon. It reads only which app a notification comes from and how many there are: notification text is never stored, shown, or sent, and the count disappears with the notification. Access can be revoked at any time in Android settings.</li>
           <li>All counts, hourly associations, sorting preferences, hidden apps, and custom aliases reside strictly in private <code>SharedPreferences</code> within the app sandbox.</li>
         </ul>
 

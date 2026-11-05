@@ -251,7 +251,7 @@
     <!-- ========================================== -->
     <article id="it" lang="it">
       <span class="badge">Italiano</span>
-      <p><em>Ultimo aggiornamento: 2 novembre 2026</em></p>
+      <p><em>Ultimo aggiornamento: 5 novembre 2026</em></p>
       
       <p>Tratto è un'applicazione Android sviluppata come progetto indipendente. Questa informativa sulla privacy illustra in modo chiaro e trasparente come Tratto gestisce i dati sul tuo dispositivo.</p>
 
@@ -283,6 +283,8 @@
           <li>Se l'utente concede il permesso di sistema "Accesso ai dati di utilizzo" (<code>PACKAGE_USAGE_STATS</code>), Tratto calcola localmente il tempo di utilizzo recente e le app usate più spesso per mostrare una dock predittiva intelligente e indicatori sul benessere digitale.</li>
           <li>Se il permesso non viene concesso, Tratto funziona regolarmente contando solo le aperture effettuate all'interno del launcher stesso.</li>
           <li>Se l'utente concede l'"Accesso alle notifiche" (facoltativo, disattivato di serie), Tratto conta in locale quante notifiche ha ogni app per mostrarne il numero sull'icona. Legge solo da quale app arriva una notifica e quante sono: i testi non vengono salvati, mostrati o inviati, e il conteggio sparisce con la notifica. L'accesso si revoca in qualsiasi momento dalle impostazioni di Android.</li>
+          <li>Se l'utente attiva "Doppio tocco per spegnere lo schermo" (facoltativo, disattivato di serie), Tratto usa un servizio di Accessibilità di Android solo per spegnere lo schermo quando l'utente tocca due volte la home. Il servizio non riceve eventi, non legge il contenuto dello schermo e non raccoglie né invia dati. Si disattiva in qualsiasi momento dalle impostazioni di Accessibilità di Android.</li>
+          <li>Tratto tiene sul telefono un registro tecnico di diagnostica (al massimo 200 KB): modello e versione del telefono, avvii e chiusure del launcher, errori e motivi per cui Android lo ha chiuso. Non contiene le lettere scritte, i nomi delle app o i contatti. Non viene mai inviato da solo: parte solo se l'utente sceglie «Invia registro di diagnostica» in Impostazioni Tratto › Informazioni e privacy e decide lui con quale app e a chi mandarlo. Si cancella con i dati di Tratto.</li>
           <li>Tutti i conteggi, le associazioni di orario, le preferenze di ordinamento, le app nascoste e gli alias personalizzati risiedono esclusivamente nei file <code>SharedPreferences</code> protetti nella sandbox locale dell'applicazione.</li>
         </ul>
 
@@ -352,7 +354,7 @@
     <!-- ========================================== -->
     <article id="en" lang="en">
       <span class="badge">English</span>
-      <p><em>Last updated: November 2, 2026</em></p>
+      <p><em>Last updated: November 5, 2026</em></p>
       
       <p>Tratto is an independent Android application. This privacy policy clearly explains how Tratto handles data on your device.</p>
 
@@ -384,6 +386,8 @@
           <li>If the user grants the optional "Usage Access" system permission (<code>PACKAGE_USAGE_STATS</code>), Tratto analyzes app usage locally to generate predictive launch dock shortcuts and mindful digital wellbeing cues.</li>
           <li>If the permission is not granted, Tratto operates normally by counting launches performed directly inside the launcher.</li>
           <li>If the user grants the optional "Notification access" (off by default), Tratto counts on the device how many notifications each app has, to show that number on its icon. It reads only which app a notification comes from and how many there are: notification text is never stored, shown, or sent, and the count disappears with the notification. Access can be revoked at any time in Android settings.</li>
+          <li>If the user turns on "Double tap to turn off the screen" (optional, off by default), Tratto uses an Android Accessibility service only to turn off the screen when the user double taps the home screen. The service receives no events, does not read screen content, and collects or sends no data. It can be turned off at any time in Android Accessibility settings.</li>
+          <li>Tratto keeps a technical diagnostic log on the phone (at most 200 KB): phone model and version, launcher starts and stops, errors and the reasons Android closed it. It does not contain the letters written, app names or contacts. It is never sent on its own: it leaves the phone only if the user chooses "Send diagnostic log" in Tratto settings › About and privacy and picks the app and the recipient. It is deleted with Tratto's data.</li>
           <li>All counts, hourly associations, sorting preferences, hidden apps, and custom aliases reside strictly in private <code>SharedPreferences</code> within the app sandbox.</li>
         </ul>
 
